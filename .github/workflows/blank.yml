@@ -19,9 +19,10 @@ jobs:
             - name: Notify result
               if: always()
               run: |
-               if [[ ${{ job.status }} == 'success']]; then
-                echo "CI pipeline succeded for push to index1-html branch!"
+               if [[ ${{ job.status }} == 'success' ]]; then
+                echo "CI pipeline succeeded for push to index1-html branch!"
                else
                 echo "CI pipeline failed for push to index1-html branch!"
                fi
+
 
